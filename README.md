@@ -1,6 +1,6 @@
 # melody
 educational project
-###technologies
+### technologies
 -html
 -css
 -js
