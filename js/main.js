@@ -25,7 +25,7 @@ $(document).ready(function () {
 
 
     counterDown.on("click", function () {
-        if (currentFloor >2){
+        if (currentFloor > 2){
             currentFloor--;
             usCurrentFloor = currentFloor.toLocaleString('en-US', {minimumIntegerDigits:2, useGrouping: false});
             $(".counter").text(usCurrentFloor);
