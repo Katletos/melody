@@ -12,7 +12,7 @@ $(document).ready(function () {
     });  
 
     // отслеживаем клик по кнопке вверх
-    counterUp.on("click", function(){
+    counterUp.on("click", function () {
         // проверяем значение этажа
         if (currentFloor < 18){
             currentFloor++; // прибавляем 1 этаж
@@ -23,15 +23,14 @@ $(document).ready(function () {
         }
     }); 
 
-    // отслеживаем клик по кнопке вверх
-    counterDown.on("click", function(){
-        // проверяем значение этажа
+
+    counterDown.on("click", function () {
         if (currentFloor >2){
-            currentFloor--; // отнимаем 1 этаж
-            usCurrentFloor = currentFloor.toLocaleString('en-US', {minimumIntegerDigits:2, useGrouping: false}); // форматируем переменную с этажом из 2 в 02
-            $(".counter").text(usCurrentFloor); // записываем значение в счётчик
-            floorPath.removeClass("current-floor"); // удаляем активный класс у этажей
-            $(`[data-floor=${usCurrentFloor}]`).toggleClass("current-floor"); // подсвечиваем текущий этаж
+            currentFloor--;
+            usCurrentFloor = currentFloor.toLocaleString('en-US', {minimumIntegerDigits:2, useGrouping: false});
+            $(".counter").text(usCurrentFloor);
+            floorPath.removeClass("current-floor");
+            $(`[data-floor=${usCurrentFloor}]`).toggleClass("current-floor");
         }
     }); 
 });
