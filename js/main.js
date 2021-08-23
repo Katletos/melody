@@ -7,19 +7,19 @@ $(document).ready(function () {
     var modal =$(".modal"); //класс в переменную
     var modalCloseButton =$(".modal-close-button"); // крестик
     var buttonPrimary =$(".button-primary"); // большая синяя кнопка
-/*
+
     var currentFlat = 1; // переменная с текущей квартирой
     var flatPath =$("modal-image path"); // квартиры SVG
     var flatPathItem = $(".flat-item a"); // характеристики квартир
 
-    // при наведении мышкой на этаж
+    //при наведении мышкой на этаж
     floorPath.on("mouseover", function () {
         currentFloor = $(this).attr("data-floor"); // получаем значение текущего этажа
         floorPath.removeClass("current-floor"); // удаляем активный класс у этажей
         $(".counter").text(currentFloor); // записываем значение этажа в счётчик
         $(".modal-counter").text(currentFloor); // записываем значение этажа в счётчик
     });  
-*/
+
     flatPath.on("mouseover", function () {
         currentFloor = $(this).attr("data-flat");
         flatPath.removeClass("currentFlat");
