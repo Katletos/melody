@@ -72,7 +72,8 @@ body {
   max-width: 1280px;
   margin: auto;
   display: flex;
-  margin-top: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .main-info {
@@ -230,4 +231,86 @@ path.current-floor {
   cursor: pointer;
   border: none;
   background-color: #fff;
+}
+
+.footer {
+  background-color: #d7d7d7;
+  padding: 40px 70px;
+  border-top: 4px solid #3596f5;
+}
+
+.footerbar {
+  max-width: 1280px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footerbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo {
+  margin-right: 40px;
+}
+
+.footerbar-contacts {
+  text-align: left;
+  margin-right: 60px;
+}
+
+.footerbar-text {
+  display: block;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #635854;
+}
+
+.footerbar-phone {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  color: #635854;
+  text-decoration: none;
+}
+
+.footer-social-img {
+  margin-right: 15px;
+}
+
+.link-item {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration-line: underline;
+  color: #635854;
+  margin-left: 20px;
+}
+
+.modal-image-flats path {
+  opacity: 0;
+  cursor: pointer;
+}
+
+.modal-image-flats path:hover {
+  opacity: 1;
+}
+
+path.current-flat {
+  opacity: 1; /* убираем прозрачность */
+}
+
+a.current-flat-item {
+  color: #3596f5; /* меняем цвет */
+  text-decoration: underline; /* добавляем подчёркивание */
+  cursor: pointer; /* сделали, чтобы при наведении на path была рука :D */
 }
